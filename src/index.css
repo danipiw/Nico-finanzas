@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  button, input, select, textarea {
+    border-radius: 0px !important;
+  }
+}
+
+/* Square design utility rules */
+.card-square {
+  border-radius: 0px !important;
+}

@@ -1,0 +1,39 @@
+/* Elimina el focus outline negro del gráfico Recharts */
+.recharts-wrapper:focus {
+  outline: none !important;
+}
+
+.recharts-wrapper:focus-visible {
+  outline: none !important;
+}
+
+/* Quita outline de todos los elementos dentro del gráfico */
+.recharts-wrapper * {
+  outline: none !important;
+}
+
+/* Animaciones de slide entre pestañas */
+@keyframes slideInRight {
+  from { transform: translateX(40px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-40px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+.tab-slide-right,
+.tab-slide-left {
+  position: relative;
+  width: 100%;
+  will-change: transform;
+}
+
+.tab-slide-right {
+  animation: slideInRight 0.22s ease-out;
+}
+
+.tab-slide-left {
+  animation: slideInLeft 0.22s ease-out;
+}
